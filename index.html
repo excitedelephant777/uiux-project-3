@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+		body {
+			font-family: "Inter", sans-serif;
+		}
+	</style>
+    <title>Iterative Design and Evaluation</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+
+
+  <body>
+
+    <div class="'page-container">
+    <h1>Iterative Design and Evaluation</h1>
+    <h2>Overview</h2>
+    <p>We set out to design a web interface for 1Flow, a platform that allows developers to receive in-platform feedback on mobile and web apps. After designing our hi-fi prototype, we received user feedback from fellow students, after which we iterated on our design to make it more user-friendly and improve user experience. We submitted our prototype to usertesting.com to receive additional feedback on our design, which we reflected on to consider what additional changes could be made for the next iteration.
+    </p>
+    <p>We decided to implement a website because user testing feedback is not necessarily a service that would need to be accessed on-the-go. A website, which would more effectively display statistics, is a more intuitive platform for the company. We included what we considered to be the most essential functionalities in our mockup. Our prototypes include the ability to edit questionnaires that would be shown to the test users as well as a “User View” page so developers can see what their users see. We also included a “Stats” page that displays relevant statistics such as click-through rates in a graphical way along with users’ answers to the questionnaire.
+    </p>
+    <h2>Initial Sketches</h2>
+    <p>Each of us made three sketches highlighting what we thought were some of the key pages and functionality for our individual visions of the site.</p>
+    <div class="sketches">
+        <img src="sketches/sketch1.png">
+        <img src="sketches/sketch2.png">
+        <img src="sketches/sketch3.png">
+        <img src="sketches/sketch4.png">
+        <img src="sketches/sketch5.png">
+        <img src="sketches/sketch6.png">
+        <img src="sketches/sketch7.png">
+        <img src="sketches/sketch8.png">
+    </div>
+    <h2>Lo-fi Prototypes</h2>
+    <p>Taking all of our sketches into consideration, we consolidated the best parts of each of our designs and combined them into the Hi-fi prototype.</p>
+    <p>Everyone came up with the User View page and a result viewing page. We also included the “Sign in” page, a “My Apps” page, and a “Edit Questionnaire” page since they are important parts of our website.</p>
+    <div class="lo-fi">
+        <img src="lo-fi/homepage.png">
+        <img src="lo-fi/developer_apps.png">
+        <img src="lo-fi/developer_stats.png">
+        <img src="lo-fi/design-view.png">
+        <img src="lo-fi/recipient-view.png">
+    </div>
+    <h2>Interactive Hi-Fi Prototype and Critique</h2>
+    <div class="hi-fi">
+        <a href="https://www.figma.com/proto/MMR5T4P3jWsVmJYMEHVy8c/1Flow?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=10%3A2" target="_blank">Prototype Link</a>
+        <img src="hi-fi-new.png">
+    </div>
+    <h3>Critique</h3>
+    <p>These are the points of feedback that we addressed in our revised prototype:</p>
+    <ul>
+        <li>1Flow logo should take you back to My Apps and not the login page</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong> 1Flow logo button now takes you back to My Apps</li>
+        </ul>
+        <li>More intuitive back button for “Edit” and “Stats” pages than clicking My Apps again on top menu</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong> We added a button reading “Back to My Apps” to both the “Edit” and “Stats” pages</li>
+        </ul>
+        <li>Ability to click between views on stats page rather than scroll--something like "cards", or something else interactive</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong> We changed the stats page to have cards that can be swiped through, and changed the questionnaire results to be dropdown answers so that the page is not a continuously scrolling page.</li>
+        </ul>
+        <li>Add disclaimer that in "User View", the inputted data is not recorded as a statistic</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong>We moved the disclaimer to be included in the header of each page in the User View.
+            </li>
+        </ul>
+        <li>Include progress measurement of some sort for user view (e.g. “1/10” or progress bar)</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong>We added a progress measurement indicator to the user view (“1/3”)
+            </li>
+        </ul>
+        <li>Add some sort of indicator to show that you’re in user view (like a frame, make the view smaller than the screen size)</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong>We added a large header that’s visible and indicates that you’re in user view. </li>
+        </ul>
+        <li>Bring more emphasis to “Sign in to get started” on start page (make it a button)</li>
+        <ul>
+            <li><strong>How We Addressed It:</strong>We changed the text to be a large, blue button that’s easy to notice.
+            </li>
+        </ul>
+    </ul>
+    <h2>User Testing & Analysis</h2>
+    <a href="https://drive.google.com/file/d/1EyCq13akywE-X6eFjXBFm4usIzpSDyGU/view?usp=sharing" target="_blank">User 1 Video</a>
+    <a href="https://drive.google.com/file/d/1k1wW-bWSzszG3lorvxOkFqeyvgK2gAOQ/view?usp=sharing" target="_blank">User 2 Video</a>
+    <a href="https://drive.google.com/file/d/1MJcPk8Vmxol-TuJc97thpN_nboPopBED/view?usp=sharing" target="_blank">User 3 Video</a>
+    <a href="https://docs.google.com/spreadsheets/d/184yceRP6Goq-8ox8ZlikGXWsMBvlsm4y/edit?usp=sharing&ouid=113161620529183032264&rtpof=true&sd=true" target="_blank">Written Feedback</a>
+    <p>The subtasks in our user tests were to sign into the website, interact with the questionnaire settings (edit a question, add a question, delete a question), and view the statistics page and “User View” pages. The most common error was with trying to find the “Questionnaire Edit” page—since the button was just labeled “Edit”, ⅔ users felt that was confusing and weren’t sure what exactly that button would have them editing. This is likely in part due to the inconsistency in labeling between the instructions and the prototype, but clarifying the express purpose of the “Edit” button can only help with clarity.  Another user also recommended some kind of “instructions” page or popup that would remind a user how to use the site and what options are available to them. Based on this feedback, we could potentially add an instructions page and change the edit button to read “Edit Questionnaire.”
+    </p>
+    </div>
+  </body>
+</html>

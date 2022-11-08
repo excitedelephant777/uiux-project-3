@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background: #E9F2FF;
+    font-family: "Inter", serif !important;
+}
+
+p, h1, h2, h3, img, a {
+    padding: 10px 30px;
+}
+
+h1, h2 {
+    padding-top: 30px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.sketches, .lo-fi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.sketches img {
+    height: 500px;
+}
+.lo-fi img {
+    width: 450px;
+}
+
+.hi-fi {
+    display: flex;
+    flex-direction: column;
+}
